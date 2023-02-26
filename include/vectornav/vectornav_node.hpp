@@ -14,14 +14,14 @@
 
 // ROS2
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/imu.hpp"
-#include "sensors_msgs/fix.hpp"
-#include "vectornav_msgs/msg/attitude_group.hpp"
-#include "vectornav_msgs/msg/common_group.hpp"
-#include "vectornav_msgs/msg/gps_group.hpp"
-#include "vectornav_msgs/msg/imu_group.hpp"
-#include "vectornav_msgs/msg/ins_group.hpp"
-#include "vectornav_msgs/msg/time_group.hpp"
+#include "sensor_msgs/msg/imu.hpp"
+#include "sensor_msgs/msg/nav_sat_fix.hpp"
+// #include "vectornav_msgs/msg/attitude_group.hpp"
+// #include "vectornav_msgs/msg/common_group.hpp"
+// #include "vectornav_msgs/msg/gps_group.hpp"
+// #include "vectornav_msgs/msg/imu_group.hpp"
+// #include "vectornav_msgs/msg/ins_group.hpp"
+// #include "vectornav_msgs/msg/time_group.hpp"
 
 // VectorNav libvncxx
 #include "vn/ezasyncdata.h"

@@ -10,12 +10,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(vectornav_msgs REQUIRED)
+# find_package(vectornav_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 
 # simplify includes
 include_directories(
   include
+  vnproglib-1.2.0.0/cpp/include
 )
 
 # vncxx
@@ -33,7 +34,7 @@ target_compile_definitions(
 ament_target_dependencies( ${PROJECT_NAME} 
     rclcpp 
     geometry_msgs 
-    vectornav_msgs
+    # vectornav_msgs
 )
 # link vn library
 target_link_libraries( ${PROJECT_NAME} 

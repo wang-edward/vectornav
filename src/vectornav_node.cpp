@@ -4,7 +4,7 @@ using namespace std::chrono_literals;
 
 namespace vectornav {
 
-  VectornavNode::VectornavNode(const rclcpp::NodeOptions& options): Node("vectornav_node") {
+  VectornavNode::VectornavNode(const rclcpp::NodeOptions& options): Node{"vectornav_node", options} {
     ez = vn::sensors::EzAsyncData::connect(SensorPort, SensorBaudrate);
     this->publisher_imu_ = this->create_publisher<sensor_msgs::msg::Imu>
         ("vectornav/imu", 10);
