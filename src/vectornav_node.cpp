@@ -118,4 +118,4 @@ namespace vectornav {
 
 #include <rclcpp_components/register_node_macro.hpp>
 
-RCLCPP_COMPONENTS_REGISTER_NODE(composition::p6_waypoint)
+RCLCPP_COMPONENTS_REGISTER_NODE(vectornav::VectornavNode)
